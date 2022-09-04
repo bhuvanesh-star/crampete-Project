@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(210, 163, 254, 0.617);
+    border-radius: 5%;
+    color: white;
+}
+
+.heading {
+    background-color: darkgray;
+    background-image: url(colosseum-at-sunrise.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+}
+
+.headrow {
+    display: grid;
+    grid-template-columns: 2fr, 3fr;
+    grid-template-rows: auto;
+
+}
+
+.icons-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    text-transform: capitalize;
+}
+
+.galleryrow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0%;
+}
+
+.column {
+    flex: 25%;
+    width: 25%;
+    padding: 4px;
+}
+
+.column img {
+    vertical-align: middle;
+    width: 100%;
+    margin: 2px;
+    transition: .5s;
+}
+
+.column img:hover {
+    box-shadow: 4px 4px 5px rgba(7, 7, 7);
+}
+
+.testicont {
+    text-align: center;
+}
+
+.testirow {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-2 img {
+    max-height: 150px;
+    max-width: 150px;
+    border-radius: 50%
+}
+
+.testimonial-1 {
+    padding: 10px;
+    background: grey;
+
+}
+
+.testimonial-2 {
+    padding: 10px;
+}
+
+.galery {
+
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr;
+    grid-gap: 5px;
+}
+
+.video-row-1 {
+    background-color: cornsilk;
+    padding: 5px;
+    margin: 5px;
+}
+
+.video-row-2 {
+    background-color: rgb(241, 205, 205);
+    margin: 5px;
+}
+
+.whycon {
+    background-color: burlywood;
+    background-image: url(373787.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+}
+
+.whyow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    justify-content: space-around;
+    background-color: rgb(245, 245, 243);
+    align-items: center;
+    text-align: center;
+    font-family: cursive;
+    font-size: smaller;
+    padding: 25px;
+    margin: 25px;
+    opacity: 0.6;
+}
+
+.binge {
+    background: lawngreen;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+.bingediv {
+    text-transform: uppercase;
+}
+
+.bingediv p {
+    color: black;
+}
+
+.bingespan {
+    text-transform: initial;
+    font-size: 14px;
+    color: rgba(1, 117, 36, 0.801);
+}
+
+.bingebtn {
+    text-transform: uppercase;
+    border-radius: 0 !important;
+}
+
+.footer {
+    background-color: rgba(109, 76, 32, 0.459);
+    /* padding:70px 0; */
+}
+
+.footcont {
+    max-width: 1200px;
+    margin: auto;
+    font-family: cursive;
+}
+
+.footerrow {
+    display: inline-block;
+}
+
+.footerrow h5 {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0, auto;
+    padding: 10px;
+}
+
+.footerrow ul li {
+    list-style-type: none;
+}
+
+.footercol {
+    width: 20%;
+
+}
+
+.footercol ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgba(163, 45, 61, 0.452);
+    transition: 0.5s;
+}
+
+#footer-col-1 {
+    font-size: 10px;
+}
+
+.footcont>h4 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.footercol ul li a:hover {
+    color: rgb(165, 25, 36);
+    padding-left: 2px;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width:998px) {
+    .column {
+        flex: 50%;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .column {
+        flex: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .galery {
+        grid-template-columns: repeat(1, 100%);
+    }
+}
+
+@media screen and (max-width:300px) {
+    .footercol {
+        width: 100%;
+    }
+}
